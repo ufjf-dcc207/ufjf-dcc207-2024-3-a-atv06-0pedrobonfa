@@ -30,12 +30,15 @@ export default function Emoji() {
     console.log(`toNextStage()! ${situacao}`);
     if(situacao === "happy"){
         setSituacao("sick");
+        break;
     }
     else if(situacao === "sick"){
         setSituacao("dead");
+        break;
     }
     else if(situacao === "dead"){
         setSituacao("happy");
+        break;
     }
   }
 
