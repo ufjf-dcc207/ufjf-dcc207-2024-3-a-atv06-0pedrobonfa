@@ -29,7 +29,7 @@ export default function Emoji() {
   function toNextStage() {
     console.log(`toNextStage()! ${situacao}`);
     if(situacao === "happy"){
-        setSituacao("sick"
+        setSituacao("sick");
     }
     else if(situacao === "sick"){
         setSituacao("dead");
