@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import './Atributo.css'
 
+type AtributoProps = {
+    icone:String;
+}
 
-export default function Contador()
-{
-    const [valor, setValor] = useState(3);
+export default function Contador({icone}: AtributoProps){
+    const [valor, setValor] = useState(5);
 
     function onMaisClick(){
         if(valor == 5)
@@ -20,7 +22,7 @@ export default function Contador()
     return (
         <div className="atributo">
 
-            <span>{"X".repeat(valor)}</span>
+            <span>{icone.repeat(valor)}</span>
             <span>{"_".repeat(5-valor)}</span>
             <button onClick={onMaisClick}>+</button>
 
