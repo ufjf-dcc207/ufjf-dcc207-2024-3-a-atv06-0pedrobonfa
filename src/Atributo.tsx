@@ -4,9 +4,15 @@ import './Atributo.css'
 
 export default function Contador()
 {
+    const [valor, setValor] = useState(3);
 
     return (
-        <div className='atributo'>x</div>
+        <div className="atributo">
+
+            <span>{valor}</span>
+            <button>+</button>
+
+        </div>
 
     );
 }
