@@ -9,7 +9,7 @@ const EMOJIS = new Map<String, String>([
 //EMOJIS.set("happy","🙂");
 
 export default function Emoji() {
-  const [situacao, setSituacao] = useState("dead");
+  const [situacao, setSituacao] = useState("vivo");
 
   function toHappy() {
     console.log(`toHappy()! ${situacao}`);
@@ -26,8 +26,10 @@ export default function Emoji() {
     setSituacao("sick");
   }
 
+  //setar ele depois pra switch case e default pra happy
   function toNextStage() {
     console.log(`toNextStage()! ${situacao}`);
+
     if(situacao === "happy"){
         setSituacao("sick");
     }
@@ -37,6 +39,7 @@ export default function Emoji() {
     else if(situacao === "dead"){
         setSituacao("happy");
     }
+    
   }
 
   return (
