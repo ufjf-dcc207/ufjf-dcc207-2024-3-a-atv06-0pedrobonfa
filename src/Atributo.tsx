@@ -23,7 +23,7 @@ export default function Contador({icone}: AtributoProps){
         <div className="atributo">
 
             <span>{icone.repeat(valor)}</span>
-            <span>{"_".repeat(5-valor)}</span>
+            <span className="inativo">{icone.repeat(5-valor)}</span>
             <button onClick={onMaisClick}>+</button>
 
         </div>
