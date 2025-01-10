@@ -20,7 +20,8 @@ export default function Contador()
     return (
         <div className="atributo">
 
-            <span>{valor}</span>
+            <span>{"X".repeat(valor)}</span>
+            <span>{"_".repeat(5-valor)}</span>
             <button onClick={onMaisClick}>+</button>
 
         </div>
