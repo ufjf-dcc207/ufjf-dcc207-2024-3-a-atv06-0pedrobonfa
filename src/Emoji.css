@@ -1,9 +1,16 @@
 .emoji{
-    .situacao{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    .face{ 
+        font-size:10em;
+    }
+    .situacao {
         font-size: 4em;
     }
-    .acoes{
+    .acoes {
         display: flex;
         flex-direction: column;
+        gap: 5px;
     }
 }
