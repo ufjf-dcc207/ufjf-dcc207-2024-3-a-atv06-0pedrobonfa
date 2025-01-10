@@ -6,7 +6,7 @@ type AtributoProps = {
 }
 
 export default function Contador({icone}: AtributoProps){
-    const [valor, setValor] = useState(5);
+    const [valor, setValor] = useState(3);
 
     function onMaisClick(){
         if(valor == 5)
