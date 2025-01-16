@@ -1,8 +1,7 @@
 .atributo{
-    border: 1px solid gray
-}
-
-.inativo{
-    filter: grayscale(100%);
-    opacity: 0.4;
+    .inativo{
+        filter: grayscale(100%);
+        opacity: 0.4;
+    }
+    
 }
