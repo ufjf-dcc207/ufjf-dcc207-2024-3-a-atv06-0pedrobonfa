@@ -10,7 +10,7 @@ const EMOJIS = new Map<String, String>([
 //EMOJIS.set("happy","🙂");
 
 export default function Emoji() {
-  const [situacao, setSituacao] = useState("vivo");
+  const [situacao] = useState("vivo");
   const [saude, setSaude] = useState(5);
   const [energia, setEnergia] = useState(3);
   const [comida, setComida] = useState(2);
