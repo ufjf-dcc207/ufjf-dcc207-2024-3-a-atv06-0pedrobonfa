@@ -8,7 +8,6 @@ type AtributoProps = {
 export default function Contador({icone, valor}: AtributoProps){
         
 
-
     return (
         <div className="atributo">
 
