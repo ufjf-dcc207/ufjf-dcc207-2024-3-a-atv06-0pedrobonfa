@@ -32,6 +32,10 @@ export default function Emoji() {
   }
 
   function onCiclo() {
+    if(comida>0 && agua > 0 && luz == false)
+    {
+      setSaude(Math.min(5,saude+1));
+    }
     setComida(Math.max(0, comida - 1));
     setAgua(Math.max(0, agua - 1));
     setEnergia(Math.max(0, energia - 1));
@@ -39,7 +43,7 @@ export default function Emoji() {
     {
       setEnergia(Math.max(0,energia-1));
     }else{
-      setEnergia(Math.min(5,energia-1));
+      setEnergia(Math.min(5,energia+1));
     }
     if(comida === 0){ 
       setSaude(s => Math.max(Math.max(0,s-1)));
@@ -67,7 +71,6 @@ export default function Emoji() {
       //fica com sono
       setSituacao("sleepy")
     }
-
 
 
   }
